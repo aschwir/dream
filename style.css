@@ -1,0 +1,84 @@
+html{
+    height: 100vh;
+    width: 100vw;
+    font-size: 10px;
+}
+
+body{
+    background-color: #010005;
+}
+
+
+@keyframes textFade {
+0%{ color: #02000a;}
+25%{ color: #100152;}
+50%{ color: #0c023d;
+    text-shadow: 0px 0px 3px #0c023d ;}
+75%{ color: #01012e;
+     text-shadow: 0px 0px 5px #180f40;   
+    }
+100%{ color: #00000a;
+    text-shadow: 0px 0px 6px #585759, 0px 0px 8px #79797a, 0px 0px 9px #1f02a1  
+    }
+};
+
+.s1{
+    background-color: black;
+}
+.s2 {
+    animation: textFade 10s ease-in-out forwards;
+}
+
+.s3 {
+    animation: textFade 9.5s ease-in-out .5s forwards;
+}
+
+.s4 {
+    animation: textFade 9s ease-in-out 1s forwards;
+}
+
+.s5 {
+    animation: textFade 8.2s ease-in-out 1.5s forwards;
+}
+
+.s6 {
+    animation: textFade 6.5s ease-in-out 3s forwards;
+}
+
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    font-size: 2rem;
+}
+
+.author-text{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
