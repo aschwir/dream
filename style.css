@@ -5,7 +5,55 @@ html{
 }
 
 body{
-    background-color: #010005;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: black; 
+    overflow: hidden;
+    
+}
+
+@keyframes grow{
+    0%{width: 0vw;
+        height: 0vh;
+    background-color: yellow;}
+    1%{width: 1vw;
+        height: .2vh;
+
+    }
+    50%{width: 50vw;
+    height:.2vh}
+    100%{width:100vw;
+        height:.2vh;
+    background-color: yellow;}
+}
+
+@keyframes grow2{
+    0%{}
+
+    100%{rotate: 90deg;
+        }
+}
+
+@keyframes grow3{
+    0%{}
+
+    100%{height: 200vh;
+        }
+}
+
+@keyframes smileTrans {
+    0%{ opacity: 0;}
+    50% {opacity: .3;}
+    75%{opacity: .5}
+    100%{opacity: .8;}
+    }
+
+@keyframes dream-img{
+    0%{opacity: 0;}
+    50%{opacity: .02;}
+    100%{opacity: 0;}
 }
 
 @keyframes clearText {
@@ -28,6 +76,8 @@ body{
     text-shadow: 0px 0px 3px #585759, 0px 0px 4px #79797a, 0px 0px 5px #1f02a1;  
     }
 };
+
+
 
 .s1{
     background-color: black;
@@ -58,8 +108,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    width: 100vw;
+    height: 70vh;
+    width: 90vw;
     font-size: 2.3rem;
 }
 
@@ -70,10 +120,138 @@ body{
 }
 
 .text-box{
-    animation: clearText 10s ease-in-out 10s 1 forwards;
+    position: absolute;
+    animation: clearText 10s ease-in-out 8s 1 forwards;
+    z-index: 5;
+}
+
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: dream-img 17s ease-in-out 1s forwards;
+    z-index: 4;
+}
+
+.main-img{
+    width: 85%;
+    height: 85%;
+}
+
+.smile-container{
+    position: absolute;
+    background-color: transparent;
+    height: 20vh;
+    width: 20vw;
+    bottom:5%;
+    right:5%;
+    border-radius: 60%;
+    overflow: hidden;   
+}
+
+.smile-img{
+    width:100%;
+    height:100%; 
+    opacity: 0;
+    animation: smileTrans 15s linear 12s 1 forwards;  
 }
 
 
+.smile-container2{
+    position: absolute;
+    background-color: transparent;
+    height: 30vh;
+    width: 20vw;
+    top:5%;
+    left:5%;
+    border-radius: 60%;
+    overflow: hidden;
+    
+}
+
+.smile-img2{
+    width:100%;
+    height:100%; 
+    opacity: 0;
+    animation: smileTrans 15s linear 13s 1 forwards;  
+}
+
+.img-fill{
+    width: 100%;
+    height: 100%;
+}
+
+.img-container3{   
+        position: absolute;
+        background-color: transparent;
+        height: 30vh;
+        width: 20vw;
+        bottom:5%;
+        left:5%;
+        border-radius: 60%;
+        overflow: hidden;  
+        opacity: 0;
+        animation: smileTrans 15s linear 15s 1 forwards;  
+}
+
+.img-container4{
+    position: absolute;
+    background-color: transparent;
+    height: 30vh;
+    width: 20vw;
+    top:5%;
+    right:5%;
+    border-radius: 60%;
+    overflow: hidden; 
+    opacity: 0;
+    animation: smileTrans 15s linear 14s 1 forwards; 
+}
+
+.line{
+    display: hidden;
+    position: absolute ; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0%;
+    height: 0%;
+    overflow: hidden;
+    background: yellow;
+    
+    animation: grow 12s linear 19s 1 forwards, grow2 9s linear 28s forwards,grow3 3s linear 38s forwards;
+}
+
+
+/* .line2{
+    display: hidden;
+    position: absolute ;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0%;
+    height: 0%;
+    overflow: hidden;
+    background: green;
+    
+    animation: grow 12s linear 25s 1 forwards, grow2 9s linear 28s forwards,grow3 3s linear 38s forwards;
+} */
+/*
+.line3{
+    display: hidden;
+    position: absolute ; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0%;
+    height: 0%;
+    overflow: hidden;
+    background: blue;
+    z-index: 10;
+    animation: grow 12s linear 23s 1 forwards, grow2 9s linear 28s forwards,grow3 3s linear 38s forwards;
+} */
 
 
 
