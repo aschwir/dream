@@ -39,7 +39,7 @@ body{
     50%{width: 50vw;
     height:.2vh}
 
-    100%{width:100vh;
+    100%{width:100vw;
         height:.2vh;
     }
 }
@@ -230,8 +230,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 4%;
+    width: 0vw;
+    height: 0%;
     overflow: hidden;
     background: #2b0e47;
     
@@ -272,9 +272,9 @@ body{
  justify-content: center;
  align-items: center;
     position: absolute;
-    width: 0vw;
-    height: 0vh;
-    background-color: transparent;
+    width: 100vw;
+    height:100vh;
+    background-color: transparent
 }
 
 
