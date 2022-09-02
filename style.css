@@ -14,6 +14,20 @@ body{
     
 }
 
+@keyframes finalImg{
+    0%{opacity: 0;
+        filter: blur(4rem);}
+    25%{opacity: 0;
+        filter: blur(4rem);}
+    50%{opacity: .5;
+        filter: blur(2rem);}
+    75%{opacity: 1;
+        filter: blur(1rem);}
+    100%{opacity: 1;
+        filter: blur(0rem);
+    }
+}
+
 @keyframes grow{
     0%{width: 0vw;
         height: 0vh;
@@ -249,7 +263,7 @@ body{
     overflow: hidden;
     background: black;
     
-     animation: grow 5s linear 23s 1 forwards, grow2 3s linear 29s forwards,grow3 3s linear 32s forwards;
+     animation: grow 5s linear 23s 1 forwards, grow2 2s linear 29s forwards,grow3 2s linear 31s forwards;
 } 
 
 .line-container{
@@ -268,7 +282,11 @@ body{
     width: 40vw;
     height:auto;
     z-index: 15;
-    opacity: .5;
+    opacity: 0;
+    border-radius: 30%;
+    
+
+animation: finalImg 2s linear 31s 1 forwards;
     
 }
 
