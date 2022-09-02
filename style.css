@@ -38,7 +38,8 @@ body{
     }
     50%{width: 50vw;
     height:.2vh}
-    100%{width:100vw;
+
+    100%{width:100vh;
         height:.2vh;
     }
 }
