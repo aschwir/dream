@@ -32,14 +32,14 @@ body{
     0%{width: 0vw;
         height: 0vh;
     }
-    1%{width: 1vw;
+    1%{width: 1vh;
         height: .2vh;
 
     }
-    50%{width: 50vw;
+    50%{width: 50vh;
     height:.2vh}
 
-    100%{width:100vw;
+    100%{width:100vh;
         height:.2vh;
     }
 }
