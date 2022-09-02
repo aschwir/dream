@@ -8,8 +8,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    background-color: black; 
+    height: 100vh;
+    background-color: green; 
     overflow: hidden;
     
 }
@@ -128,6 +128,7 @@ body{
     width: 90vw;
     font-size: 2.3rem;
     overflow: hidden;
+    background-color: yellow;
 }
 
 .author-text{
@@ -234,8 +235,7 @@ body{
     width: 0vw;
     height: 0%;
     overflow: hidden;
-    background: #2b0e47;
-    
+    background: #2b0e47; 
     animation: grow 5s linear 19s 1 forwards, grow2 5s linear 24s forwards,grow3 3s linear 29s forwards;
 }
 
@@ -249,8 +249,7 @@ body{
     width: 0vw;
     height: 0%;
     overflow: hidden;
-    background: #1f027d;
-    
+    background: #1f027d; 
    animation: grow 5s linear 22s 1 forwards, grow2 4s linear 26s forwards,grow3 3s linear 30s forwards;
 }   
 
@@ -263,8 +262,7 @@ body{
     width: 0vw;
     height:0%;
     overflow: hidden;
-    background: black;
-    
+    background: black;   
      animation: grow 5s linear 23s 1 forwards, grow2 2s linear 29s forwards,grow3 2s linear 31s forwards;
 } 
 
