@@ -1,20 +1,23 @@
 html{
-    height: 100vh;
+    height: -webkit-fill-available;
     width: 100vw;
-    font-size: 10px;
+    font-size: 2vw;
 }
 
 body{
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: green; 
+    align-items: center; 
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    min-width: 100vw;
+    margin: 0;
+    background-color: black; 
     overflow: hidden;
     
 }
 
-@keyframes finalImg{
+/* @keyframes finalImg{
     0%{opacity: 0;
         filter: blur(4rem);}
     25%{opacity: 0;
@@ -26,25 +29,25 @@ body{
     100%{opacity: 1;
         filter: blur(0rem);
     }
-}
+} */
 
-@keyframes grow{
+/* @keyframes grow{
     0%{width: 0vw;
         height: 0vh;
     }
-    1%{width: 1vh;
+    /* 1%{width: 1vh;
         height: .2vh;
 
-    }
-    50%{width: 50vh;
+    } 
+    50%{width: 50vw;
     height:.2vh}
 
-    100%{width:100vh;
+    100%{width:100vw;
         height:.2vh;
     }
-}
+} */
 
-@keyframes grow2{
+/* @keyframes grow2{
     0%{}
 
     100%{rotate: 90deg;
@@ -54,28 +57,27 @@ body{
 @keyframes grow3{
     0%{}
 
-    100%{height: 200vh;
-        width: 100vw
-        }
-}
+    100%{width: 100vh;
+        height: 100vh;
+                }
+} */
 
-@keyframes smileTrans {
+/* @keyframes smileTrans {
     0%{ opacity: 0;}
     50% {opacity: .3;}
     75%{opacity: .5}
     100%{opacity: .8;}
-    }
+    } */
 
 @keyframes dream-img{
     0%{opacity: 0;}
     50%{opacity: .02;}
-    100%{opacity: 0;}
+    100%{opacity: .03;}
 }
 
 @keyframes clearText {
     0%{opacity: 1;}
-    100%{opacity: 0;
-    display: hidden;}
+    100%{opacity: 0;}
 }
 
 
@@ -93,9 +95,7 @@ body{
     }
 };
 
-
-
-.s1{
+ .s1{
     background-color: black;
 }
 .s2 {
@@ -115,49 +115,73 @@ body{
 }
 
 .s6 {
-    animation: textFade 6.5s ease-in-out 3s forwards;
+    
+     animation: textFade 6.5s ease-in-out 3s forwards; 
+} 
+
+.text-container{
+    animation: clearText 10s ease-in-out 8s 1 forwards; 
 }
 
 
+.absolute-position{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
 
-.container{
+/* .container{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
-    width: 90vw;
+    height: 100%;
+    width: 100%;
     font-size: 2.3rem;
     overflow: hidden;
     background-color: yellow;
-}
+} */
+
+/* .text-box{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    /* opacity: 0; 
+     animation: clearText 10s ease-in-out 8s 1 forwards;      
+} */
 
 .author-text{
+    width:80%;
+    position: absolute;
     display: flex;
     justify-content: flex-end;
+    align-items: baseline;
     margin-top: 2%;
 }
 
-.text-box{
-    position: absolute;
-    animation: clearText 10s ease-in-out 8s 1 forwards;
-    z-index: 5;
-}
-
-.img-container{
+/* .img-container{
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: 0;
     animation: dream-img 17s ease-in-out 1s forwards;
-    z-index: 4;
-}
+    z-index: 4; 
+}*/
 
 .main-img{
-    width: 85%;
-    height: 85%;
+    width: 70vw;
+    height: 45vh;
+    opacity: 0;
+    animation: dream-img 17s ease-in-out 1s forwards; 
 }
 
-.smile-container{
+
+/* .smile-container{
     position: absolute;
     background-color: transparent;
     height: 20vh;
@@ -166,17 +190,17 @@ body{
     right:5%;
     border-radius: 60%;
     overflow: hidden;   
-}
+} */
 
-.smile-img{
-    width:100%;
-    height:100%; 
-    opacity: 0;
-    animation: smileTrans 15s linear 12s 1 forwards;  
-}
+/* .smile-img{
+    max-width:100%;
+    height:auto; 
+    border-radius: 50%;
+ 
+} */
 
 
-.smile-container2{
+/* .smile-container2{
     position: absolute;
     background-color: transparent;
     height: 30vh;
@@ -186,21 +210,21 @@ body{
     border-radius: 60%;
     overflow: hidden;
     
-}
+} */
 
-.smile-img2{
+/* .smile-img2{
     width:100%;
     height:100%; 
-    opacity: 0;
-    animation: smileTrans 15s linear 13s 1 forwards;  
-}
+    /* opacity: 0;
+    animation: smileTrans 15s linear 13s 1 forwards;   
+} */
 
-.img-fill{
+/* .img-fill{
     width: 100%;
     height: 100%;
-}
+} */
 
-.img-container3{   
+/* .img-container3{   
         position: absolute;
         background-color: transparent;
         height: 30vh;
@@ -211,9 +235,9 @@ body{
         overflow: hidden;  
         opacity: 0;
         animation: smileTrans 15s linear 15s 1 forwards;  
-}
+} */
 
-.img-container4{
+/* .img-container4{
     position: absolute;
     background-color: transparent;
     height: 30vh;
@@ -224,23 +248,23 @@ body{
     overflow: hidden; 
     opacity: 0;
     animation: smileTrans 15s linear 14s 1 forwards; 
-}
+} */
 
-.line{
+/* .line{
     display: hidden;
     position: absolute; 
     display: flex;
     justify-content: center;
     align-items: center;
     width: 0vw;
-    height: 0%;
-    overflow: hidden;
+    height: 0vh;
+    /* overflow: hidden; 
     background: #2b0e47; 
-    animation: grow 5s linear 19s 1 forwards, grow2 5s linear 24s forwards,grow3 3s linear 29s forwards;
-}
+    animation: grow 5s linear 19s 1 forwards,grow2 5s linear 24s forwards,grow3 3s linear 29s forwards;
+} */
 
 
- .line2{
+ /* .line2{
     display: hidden;
     position: absolute ;
     display: flex;
@@ -250,10 +274,11 @@ body{
     height: 0%;
     overflow: hidden;
     background: #1f027d; 
-   animation: grow 5s linear 22s 1 forwards, grow2 4s linear 26s forwards,grow3 3s linear 30s forwards;
-}   
+    
+   animation: grow 5s linear 22s 1 forwards grow2 4s linear 26s forwards,grow3 3s linear 30s forwards;;
+}    */
 
-.line3{
+/* .line3{
     display: hidden;
     position: absolute ; 
     display: flex;
@@ -263,8 +288,8 @@ body{
     height:0%;
     overflow: hidden;
     background: black;   
-     animation: grow 5s linear 23s 1 forwards, grow2 2s linear 29s forwards,grow3 2s linear 31s forwards;
-} 
+     animation: grow 5s linear 23s 1 forwards grow2 2s linear 29s forwards,grow3 2s linear 31s forwards;
+}  */
 
 /* .line-container{
  display: flex;
@@ -277,7 +302,7 @@ body{
 } */
 
 
-.final-img{
+/* .final-img{
     position:absolute;
     width: 40vw;
     height:auto;
@@ -288,7 +313,7 @@ body{
 
 animation: finalImg 2s linear 31s 1 forwards;
     
-}
+} */
 
 
 
