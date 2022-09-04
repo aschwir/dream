@@ -20,7 +20,9 @@ body{
 
 .wrapper{
     position: fixed;
+    max-height: 98vh;
     height:100%;
+    max-width: 98vw;
     width: 100%;
     display: flex;
     justify-content: center;
