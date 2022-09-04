@@ -19,6 +19,7 @@ body{
 }
 
 .wrapper{
+    position: fixed;
     height:100%;
     width: 100%;
     display: flex;
@@ -355,7 +356,7 @@ body{
     z-index: 15;
     opacity: 0;
     border-radius: 30%;
-    animation: finalImg 2s linear 34s 1 forwards;   
+    animation: finalImg 2s linear 35.8s 1 forwards;   
 }
 
 
