@@ -18,7 +18,7 @@ body{
     
 }
 
-/* @keyframes finalImg{
+@keyframes finalImg{
     0%{opacity: 0;
         filter: blur(4rem);}
     25%{opacity: 0;
@@ -30,7 +30,7 @@ body{
     100%{opacity: 1;
         filter: blur(0rem);
     }
-} */
+}
 
 @keyframes grow{
     0%{width: 0%;
@@ -205,7 +205,7 @@ body{
     width: 100vw;
     height:100vh;
     background-color: transparent;
-} 
+}
 
 
 .line{
@@ -213,18 +213,19 @@ body{
     width: 0%;
     height: 0%;
     border: 0;
-    animation: grow 4s linear 19s 1 forwards, grow2 4s linear 23s forwards, grow3 3s linear 27s forwards;
-    background: #2b0e47;    
-} 
+    background: #2b0e47;
+    animation: grow 3s linear 18s 1 forwards, grow2 3s linear 21s forwards, grow3 2s linear 24s forwards;
+          
+}
 
  .line2{
     position: absolute ;
     width: 0%;
     height: 0%;
     border: 0;
-    background: #234394; 
-   animation: grow 4s linear 21s 1 forwards, grow2 4s linear 25s forwards,grow3 3s linear 29s forwards;
-}  
+    background: #234394;  
+    animation: grow 3s linear 20s 1 forwards, grow2 3s linear 23s forwards, grow3 2s linear 26s forwards;
+} 
 
 .line3{
     position: absolute ; 
@@ -232,7 +233,7 @@ body{
     height:0%;
     border: 0;
     background: #370cc4;   
-    animation: grow 4s linear 23s 1 forwards, grow2 4s linear 27s forwards,grow3 3s linear 31s forwards;
+    animation: grow 3s linear 22s 1 forwards, grow2 3s linear 25s forwards,grow3 2s linear 28s forwards;
 } 
 
 .line4{
@@ -240,8 +241,8 @@ body{
     width: 0%;
     height:0%;
     border: 0;
-    background: #120cc4;   
-    animation: grow 4s linear 25s 1 forwards, grow2 4s linear 29s forwards,grow3 3s linear 33s forwards;
+    background: #7703a5;    
+    animation: grow 3s linear 24s 1 forwards, grow2 3s linear 27s forwards,grow3 2s linear 30s forwards;
 }
 
 .line5{
@@ -249,9 +250,9 @@ body{
     width: 0%;
     height:0%;
     border: 0;
-    background: #0c013d;   
-    animation: grow 4s linear 27s 1 forwards, grow2 4s linear 31s forwards,grow3 3s linear 35s forwards;
-} 
+    background: #7c0676;   
+    animation: grow 3s linear 26s 1 forwards, grow2 3s linear 29s forwards,grow3 2s linear 32s forwards;
+}
 
 .line6{
     position: absolute ; 
@@ -259,8 +260,8 @@ body{
     height:0%;
     border: 0;
     background: #0503a3;   
-    animation: grow 4s linear 29s 1 forwards, grow2 4s linear 33s forwards,grow3 3s linear 37s forwards;
-} 
+    animation: grow 3s linear 28s 1 forwards, grow2 3s linear 31s forwards,grow3 2s linear 34s forwards;
+}
 
 
 .line7{
@@ -268,27 +269,26 @@ body{
     width: 0%;
     height:0%;
     border: 0;
-    background: black;   
-    animation: grow 4s linear 31s 1 forwards, grow2 4s linear 35s forwards,grow3 3s linear 39s forwards;
+    background: #000000;  
+    animation: grow 3s linear 30s 1 forwards, grow2 3s linear 33s forwards, grow3 2s linear 36s forwards;
 }
-
 
 .line8{
     position: absolute;
     width: 0%;
     height: 0%;
     border: 0;
-    animation: grow 4s linear 19s 1 forwards, grow-rev 4s linear 23s forwards, grow3 3s linear 27s forwards;
+    animation: grow 3s linear 18s 1 forwards, grow-rev 3s linear 21s forwards, grow3 2s linear 24s forwards;
     background: #2b0e47;    
-} 
+}
 
- .line9{
-    position: absolute ;
+  .line9{
+   position: absolute ;
     width: 0%;
     height: 0%;
     border: 0;
     background: #234394; 
-   animation: grow 4s linear 21s 1 forwards, grow-rev 4s linear 25s forwards,grow3 3s linear 29s forwards;
+   animation: grow 3s linear 20s 1 forwards, grow-rev 3s linear 23s forwards,grow3 2s linear 26s forwards;
 }  
 
 .line10{
@@ -296,17 +296,18 @@ body{
     width: 0%;
     height:0%;
     border: 0;
-    background: #370cc4;   
-    animation: grow 4s linear 23s 1 forwards, grow-rev 4s linear 27s forwards,grow3 3s linear 31s forwards;
-} 
+    background: #370cc4;  
+    animation: grow 3s linear 22s 1 forwards, grow-rev 3s linear 25s forwards,grow3 2s linear 28s forwards;
+}
+
 
 .line11{
     position: absolute ; 
     width: 0%;
     height:0%;
     border: 0;
-    background: #120cc4;   
-    animation: grow 4s linear 25s 1 forwards, grow-rev 4s linear 29s forwards,grow3 3s linear 33s forwards;
+    background: #7703a5;  
+    animation: grow 3s linear 24s 1 forwards, grow-rev 3s linear 27s forwards,grow3 2s linear 30s forwards;
 }
 
 .line12{
@@ -314,8 +315,8 @@ body{
     width: 0%;
     height:0%;
     border: 0;
-    background: #0c013d;   
-    animation: grow 4s linear 27s 1 forwards, grow-rev 4s linear 31s forwards,grow3 3s linear 35s forwards;
+    background: #7c0676;   
+    animation: grow 3s linear 26s 1 forwards, grow-rev 3s linear 29s forwards,grow3 2s linear 32s forwards;
 } 
 
 .line13{
@@ -323,8 +324,8 @@ body{
     width: 0%;
     height:0%;
     border: 0;
-    background: #0503a3;   
-    animation: grow 4s linear 29s 1 forwards, grow-rev 4s linear 33s forwards,grow3 3s linear 37s forwards;
+    background: #0503a3;  
+    animation: grow 3s linear 28s 1 forwards, grow-rev 3s linear 31s forwards,grow3 2s linear 34s forwards;
 } 
 
 
@@ -333,9 +334,21 @@ body{
     width: 0%;
     height:0%;
     border: 0;
-    background: black;   
-    animation: grow 4s linear 31s 1 forwards, grow-rev 4s linear 35s forwards,grow3 3s linear 39s forwards;
+    background: #000000;   
+    animation: grow 3s linear 30s 1 forwards, grow-rev 3s linear 33s forwards, grow3 2s linear 36s forwards;
+} 
+
+
+.final-img{
+    position:absolute;
+    width: 40vw;
+    height:auto;
+    z-index: 15;
+    opacity: 0;
+    border-radius: 30%;
+    animation: finalImg 2.15s linear 35s 1 forwards;   
 }
+
 
 
 
@@ -439,18 +452,7 @@ body{
     animation: smileTrans 15s linear 14s 1 forwards; 
 } 
 
-/* .final-img{
-    position:absolute;
-    width: 40vw;
-    height:auto;
-    z-index: 15;
-    opacity: 0;
-    border-radius: 30%;
-    
 
-animation: finalImg 2s linear 31s 1 forwards;
-    
-} */
 
 
 
