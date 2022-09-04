@@ -8,7 +8,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center; 
-    max-height: 100vh;
+    min-height: 100vh;
     min-height: -webkit-fill-available;
     min-width: 100vw;
     margin: 0;
@@ -16,6 +16,15 @@ body{
     background-color: black; 
     overflow: hidden;
     
+}
+
+.wrapper{
+    height:100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 @keyframes finalImg{
@@ -346,7 +355,7 @@ body{
     z-index: 15;
     opacity: 0;
     border-radius: 30%;
-    animation: finalImg 2.15s linear 35s 1 forwards;   
+    animation: finalImg 2s linear 34s 1 forwards;   
 }
 
 
