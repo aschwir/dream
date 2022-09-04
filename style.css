@@ -62,17 +62,18 @@ body{
                 }
 } */
 
-/* @keyframes smileTrans {
+@keyframes smileTrans {
     0%{ opacity: 0;}
     50% {opacity: .3;}
     75%{opacity: .5}
     100%{opacity: .8;}
-    } */
+    }
 
 @keyframes dream-img{
     0%{opacity: 0;}
     50%{opacity: .03;}
-    100%{opacity: .04;}
+    90%{opacity: .04;}
+    100%{opacity: .05;}
 }
 
 @keyframes clearText {
@@ -148,7 +149,43 @@ body{
     animation: dream-img 17s ease-in-out 2s forwards; 
 }
 
+.smile-img{
+    width:20%;
+    height:auto; 
+    border-radius: 50%;
+    opacity: 0;
+    
+}
 
+.face1{
+    position: absolute;
+    top: 8%;
+    left: 3%;
+    animation: smileTrans 15s linear 15s 1 forwards;
+
+}
+
+.face2{
+    position: absolute;
+    top: 8%;
+    right:3%;
+    animation: smileTrans 15s linear 19s 1 forwards;
+}
+
+.face3{
+    position: absolute;
+ bottom:8%;
+ left: 3%;
+ animation: smileTrans 15s linear 13s 1 forwards;
+}
+
+.face4{
+    position: absolute;
+    bottom: 8%;
+    right:3%;
+    animation: smileTrans 15s linear 17s 1 forwards;
+
+}
 
 /* .container{
     display: flex;
@@ -196,12 +233,7 @@ body{
     overflow: hidden;   
 } */
 
-/* .smile-img{
-    max-width:100%;
-    height:auto; 
-    border-radius: 50%;
- 
-} */
+
 
 
 /* .smile-container2{
