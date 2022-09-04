@@ -71,8 +71,8 @@ body{
 
 @keyframes dream-img{
     0%{opacity: 0;}
-    50%{opacity: .02;}
-    100%{opacity: .03;}
+    50%{opacity: .03;}
+    100%{opacity: .04;}
 }
 
 @keyframes clearText {
@@ -132,6 +132,23 @@ body{
     bottom: 0;
     margin: auto;
 }
+.author-text{
+    width:80%;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    margin-top: 2%;
+}
+
+.main-img{
+    width: 70vw;
+    height: 45vh;
+    opacity: 0;
+    animation: dream-img 17s ease-in-out 2s forwards; 
+}
+
+
 
 /* .container{
     display: flex;
@@ -155,14 +172,7 @@ body{
      animation: clearText 10s ease-in-out 8s 1 forwards;      
 } */
 
-.author-text{
-    width:80%;
-    position: absolute;
-    display: flex;
-    justify-content: flex-end;
-    align-items: baseline;
-    margin-top: 2%;
-}
+
 
 /* .img-container{
     display: flex;
@@ -173,12 +183,6 @@ body{
     z-index: 4; 
 }*/
 
-.main-img{
-    width: 70vw;
-    height: 45vh;
-    opacity: 0;
-    animation: dream-img 17s ease-in-out 1s forwards; 
-}
 
 
 /* .smile-container{
